@@ -18,7 +18,7 @@ class SendTeamReportEmail
 }
 ```
 
-Using this `handle` method, you'll be dispatch it as a job by running `SendTeamReportEmail::dispatch($someTeam)`.
+Using this `handle` method, you'll be able to dispatch it as a job by running `SendTeamReportEmail::dispatch($someTeam)`.
 
 However, if the logic around dispatching a job differs from the `handle` method, then you may implement the `asJob` method.
 
